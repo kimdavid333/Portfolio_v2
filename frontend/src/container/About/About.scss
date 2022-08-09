@@ -1,0 +1,92 @@
+.about-me {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    font-size: 1.125rem;
+    // font-size: var(--fs-body);
+
+   .section__subtitle--work{
+    color: #a1a1a1;
+   }
+    
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        background: var(--clr-light);
+        color: var(--clr-dark);
+        // min-height: 100vh;
+    }
+
+    .link--resume{
+      font-size: 1rem;
+
+    }
+
+    .section__technical{
+      margin: 5rem auto;
+    }
+
+    .skillsGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      // grid-auto-rows: auto;
+      // height: auto;
+      .skill-item{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+          font-size: 1em;
+        }
+  
+        img {
+          height: 65%;
+          width: 65%;
+        }
+      }
+    }
+
+    
+    @media (min-width: 641px) {
+      .skillsGrid{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px;
+          
+        }
+        
+    }
+
+    @media (min-width: 1080px) {
+      .skillsGrid{
+          grid-template-columns: repeat(6, 1fr);
+          gap: 50px;
+          
+          .skill-item{
+            p{
+              font-size: 1em;
+            }
+      
+            img {
+              height: 75%;
+              width: 75%;
+            }
+          }
+        }
+        
+    }
+}
+
+@media (min-width: 641px){
+  .about-me{
+        font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1080px){
+  .about-me{
+        font-size: 1.75rem;
+  }
+}
+
