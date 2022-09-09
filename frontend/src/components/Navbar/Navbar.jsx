@@ -12,12 +12,12 @@ const Navbar = () => {
   console.log(toggleOn)
 
   return (
-    <header>
+    <header className={`nav-toggle ${toggleOn ? "nav-open" : ""}`}>
       <div className="logo">
         <img src={images.devjane} alt="" />
       </div>
       <button
-        className={`nav-toggle ${toggleOn ? "nav-open" : ""}`}
+        className="nav-toggle"
         // className={buttonClass}
         onClick={handleToggle}
         aria-label="toggle navigation"
@@ -27,22 +27,17 @@ const Navbar = () => {
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item">
-            <a href="#home" className="nav__link">
+            <a href="#home" className="nav__link" onClick={handleToggle}>
               Home
             </a>
           </li>
           <li className="nav__item">
-            <a href="#services" className="nav__link">
-              My Services
-            </a>
-          </li>
-          <li className="nav__item">
-            <a href="#about" className="nav__link">
+            <a href="#about" className="nav__link" onClick={handleToggle}>
               About me
             </a>
           </li>
           <li className="nav__item">
-            <a href="#work" className="nav__link">
+            <a href="#work" className="nav__link" onClick={handleToggle}>
               My Work
             </a>
           </li>

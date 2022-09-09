@@ -1,6 +1,6 @@
 .my-work {
   min-height: 100vh;
-  background-color: #edf2f8;
+  background-color: var(--clr-dark);
 }
 
 .app__works {
@@ -30,8 +30,10 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: var(--secondary-color);
+      // background-color: var(--secondary-color);
+      background-color: #646363;;
       color: #fff;
+      // border: .2px solid white;
     }
 
     @media screen and (min-width: 2000px) {
@@ -41,7 +43,7 @@
   }
 
   .item-active {
-    background-color: var(--secondary-color);
+    background-color: var(--clr-accent);
     color: #fff;
   }
 }

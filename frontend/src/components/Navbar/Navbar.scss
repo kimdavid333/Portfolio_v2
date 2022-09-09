@@ -2,16 +2,16 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    background: var(--clr-dark);
 }
-
 .logo {
     max-width: 100px;
 }
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -55,14 +55,9 @@ header {
     z-index: 1000;
 }
 
-.nav-open{    
-    header {
-        background-color: red;
-    }
-    .nav {
-        transform: translateX(0%);
-    }
-} 
+.nav-open .nav {
+    transform: translateX(0);
+}
 
 .nav-open .nav-toggle {
     position: fixed;
