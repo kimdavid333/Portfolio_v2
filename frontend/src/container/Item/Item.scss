@@ -41,7 +41,10 @@
 
 .intro__img {
     box-shadow: var(--bs);
+    object-fit: cover;
 }
+
+
 
 .section__subtitle--intro {
     display: inline-block;
@@ -103,10 +106,39 @@
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    --sectionWidth: 600px;
 }
 
+.project--intro{
+    padding-bottom: 0.5rem; 
+}
+
+.para--summary{
+    font-style: italic;
+}
 .portfolio-item-individual p {
-    max-width: 600px;
+    max-width: var(--sectionWidth);
     margin-left: auto;
     margin-right: auto;
+}
+
+.portfolio-item-individual .section__img,
+.portfolio-item-individual img
+ {
+    // width: 600px;
+    width: var(--sectionWidth);
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual h5 {
+  opacity: 0.75;
+  max-width: var(--sectionWidth);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-clip{
+    display: block;
+    margin: 2rem auto;
 }
