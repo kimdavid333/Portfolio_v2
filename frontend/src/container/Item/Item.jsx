@@ -114,9 +114,8 @@ const Item = () => {
           <p>
             Additionally, this was the first project in which I used React
             extensively. I got to experiment with various use cases for React
-            useState and useEffect, and developed an appreciation for Component
-            reusablity. It greatly helped me to organize and structure frontend
-            codes.
+            hooks, and developed an appreciation for component reusablity. It
+            greatly helped me to organize and structure frontend code.
           </p>
         </div>
         <Footer />

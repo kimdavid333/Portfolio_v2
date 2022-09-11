@@ -30,18 +30,18 @@ const Item2 = () => {
           <h3>Project Objective</h3>
           <p>
             The project’s primary objective was to support the R&D team with the
-            development of a smart spindle (insert a link here). Since the
-            development heavily relies on machine-learning models, the team
-            needed a way to create and manage a large-scale vibration and
+            development of a smart <a href='https://en.wikipedia.org/wiki/Spindle_(tool)'>spindle</a>.
+            Since the development heavily relies on machine-learning models, the
+            team needed a way to create and manage a large-scale vibration and
             current dataset.
           </p>
 
           <p>
-            As a result, the client requested me to develop a web application
-            where engineers can remotely control DAQ devices, which can store
-            and display live data. It needs to handle downloads of large files
-            as datasets often get shared among engineers to verify and train
-            their models.
+            As a result, the client asked me to develop a web application where
+            engineers can remotely control DAQ devices, which can store and
+            display live data. It needs to handle downloads of large files as
+            datasets often get shared among engineers to verify and train their
+            models.
           </p>
 
           <h3>Web Stack and Services/Features</h3>
