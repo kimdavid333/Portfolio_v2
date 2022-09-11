@@ -19,7 +19,7 @@ const About = () => {
           ABOUT ME
         </h2>
         <p className='section__subtitle section__subtitle--work'>
-          Software Engineer, based in NYC
+          Software Engineer, based in NYC!
         </p>
 
         <div className='about-me__body'>
